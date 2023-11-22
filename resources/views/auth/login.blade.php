@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('title')
-Login - Gainloe
+Login - ReKrie
 @endsection
 
 @section('keywords')
-Login in Gainloe, signin
+Login in ReKrie, signin
 
 @endsection
 
@@ -16,7 +16,7 @@ Login  and  book your  products
 
 @section('content')
  
-<div align="center" class="container-fluid my-3 animated bounceIn">
+<div align="center" class="container-fluid my-3">
 
     <div class="col-md-2">
         <a href="/">
@@ -32,7 +32,7 @@ Login  and  book your  products
                             <div class="form-group row justify-content-center">
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('E-Mail Address') }}" autocomplete="email"  autofocus>
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('Seu e-mail') }}" autocomplete="email"  autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@ Login  and  book your  products
                             <div class="form-group row justify-content-center">
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required  placeholder="{{ __('Password') }}" autocomplete="current-password">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required  placeholder="{{ __('Sua senha') }}" autocomplete="current-password">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -61,7 +61,7 @@ Login  and  book your  products
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                         <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
+                                            {{ __('Lembrar-me') }}
                                         </label>
                                     </div>
                                 </div>
@@ -70,21 +70,21 @@ Login  and  book your  products
                             <div class="form-group row mb-0 justify-content-center">
                                 <div class="col-md-12 ">
                                     <button type="submit" class="btaobtn btaobtn-dark px-5 py-2">
-                                        {{ __('Login') }}
+                                        {{ __('Logar') }}
                                     </button>
                                         
                                         @if (Route::has('password.request'))
                                             <a class="btn btn-link col-md-12" href="{{ route('password.request') }}">
-                                                {{ __('Forgot Your Password?') }}
+                                                {{ __('Esqueceu sua senha?') }}
                                             </a>
                                         @endif
-                                 <strong>Not Having an Account! <br>Then <a href="register" ><u>Create a New Account</u></a></strong>
+                                 <strong>Não possui uma conta? <br>Então <a href="register" ><u>Registre-se!</u></a></strong>
                                 </div>
                                  <div class="col-md-12 ">
                                    <p class="my-2"> 
                                           <a class="black-text" href="/">
                                                <i class="fas fa-arrow-left"></i>
-                                           <u>Back to Gainloe</u>
+                                           <u>Voltar à Loja</u>
                                            </a>
                                    </p> 
                                  </div>

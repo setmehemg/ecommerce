@@ -1,13 +1,13 @@
 @extends('layout')
-@section('title') Gainloe About Us @endsection
+@section('title') ReKrie - Sobre Nós @endsection
 @section('keywords')   @endsection
 @section('description') @endsection
 @section('content')
  
-<div align="center" style="background:#1CD5E8;padding:20px;">
+<div align="center" style="background:#762a91;padding:20px;">
 <h3  class="black-text" style="font-weight:bold;margin-top:15px;">
-THE GAINLOE STORY</h3>
-<p class="white-text" style="font-weight:bold;">    JOURNEY OF GAINLOE FROM IDEATION TO STARTUP</p>
+A História da ReKrie</h3>
+<p class="white-text" style="font-weight:bold;">    Da madeira ao prático: Como surgimos</p>
   
 
 </div>
@@ -93,11 +93,11 @@ THE GAINLOE STORY</h3>
                           <!--Controls-->
                           <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
+                            <span class="sr-only">Anterior</span>
                           </a>
                           <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only">Próximo</span>
                           </a>
                           <!--/.Controls-->
                         </div>
