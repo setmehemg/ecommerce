@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe -404 page @endsection
+@section('title') ReKrie -404 page @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -27,8 +27,8 @@
    
  
               <img src="{{asset('public/Img/4004.png')}}"  class="not_found_image"   >
- 
-                <p>Sorry! Your Requested URL is not on the Server!! <br>If you have any queries Please Feel Free to <a href="{{url('Contact')}}">ContactUS</a></p>
+
+                <p>Desculpe! Esse URL não existe <br>Para qualquer dúvida, entre em contato <a href="{{url('Contact')}}">Conosco</a></p>
         
    
 </div>

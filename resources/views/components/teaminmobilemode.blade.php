@@ -6,7 +6,7 @@
       <div class="row my-4">
         <div class="col-6" >
           <div class="card mb-2">
-              <img class="card-img-top" src="{{asset('assets/img/testimonials/rahul.jpg')}}"
+              <img class="card-img-top" src="{{asset('assets/img/team/henrique.jpeg')}}"
                 alt="Card image cap">
               <div align="middle" class="card-body">
                 <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Henrique</h6>
@@ -23,7 +23,7 @@
                       
                     <div class="col-6" >
                         <div class="card mb-2">
-                            <img class="card-img-top" src="{{asset('assets/img/testimonials/rahul.jpg')}}"
+                            <img class="card-img-top" src="{{asset('assets/img/team/larissa.jpeg')}}"
                               alt="Card image cap">
                             <div align="left" class="card-body">
                               <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Larissa</h6>
@@ -35,7 +35,7 @@
                   </div>
                   <div class="col-6" >
                     <div class="card mb-2">
-                        <img class="card-img-top" src="{{asset('assets/img/testimonials/rahul.jpg')}}"
+                        <img class="card-img-top" src="{{asset('assets/img/team/edson.jpeg')}}"
                           alt="Card image cap">
                         <div align="left" class="card-body">
                           <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Edson</h6>

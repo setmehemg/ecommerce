@@ -1,5 +1,5 @@
 <div class="container"> 
-    <h3 class="py-2 px-5">All Orders</h3>
+    <h3 class="py-2 px-5">Todos Pedidos</h3>
    <div class="row px-5">
        
        <div class="col-md-12">
@@ -8,9 +8,9 @@
                        <table class="table table-striped table-bordered ">
                            <thead>
                                <th>Order_Id</th>
-                               <th>Order Details</th>
-                               <th>Delivery Address</th>
-                               <th>Total Price</th>
+                               <th>Detalhes</th>
+                               <th>Endereço</th>
+                               <th>Preço Total</th>
    
                                <th>Action</th> 
                                
@@ -30,12 +30,12 @@
                                <td>{{$item->Amount}}</td>
                                <td> 
                                 
-                                <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Check Status</a>
+                                <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Verificar Status</a>
                                  
                                  @if($item->Delivery_Status!='pending' || $item->Order_Cancel_Status==1)
-                                  <a href="{{url('admin-Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancel Order</a>
+                                  <a href="{{url('admin-Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancelar Pedido</a>
                                   @else
-                                      <a href="{{url('admin-Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancel Order</a>
+                                      <a href="{{url('admin-Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancelar Pedido</a>
                                
                                  @endif
     

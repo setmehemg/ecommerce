@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe -500 page @endsection
+@section('title') ReKrie -500 page @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -28,7 +28,7 @@
  
               <img src="{{asset('public/Img/500.png')}}"  class="not_found_image"   >
  
-                <p>Sorry for your inconvenience! We will solve it soon...</p>
+                <p>Em Construção!</p>
         
    
 </div>

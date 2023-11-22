@@ -6,7 +6,7 @@ aria-hidden="true">
         <div class="modal-content">
         <!--Header-->
         <div class="modal-header">
-            <p class="heading lead">Order Status for Order Number : {{session('Order_id')}} </p>
+            <p class="heading lead">Status do Pedido para o número : {{session('Order_id')}} </p>
 
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="white-text">&times;</span>
@@ -23,7 +23,7 @@ aria-hidden="true">
                 <p class=" animated rotateIn">
                 <i class="fas fa-check-circle fa-3x"></i>
                 </p>
-                <h3>Order Completed Succesfully </h3>
+                <h3>Pedido completo</h3>
                 @endif
                     <div class="row wow fadeIn">
     
@@ -39,7 +39,7 @@ aria-hidden="true">
                                 <!-- Table  -->
                                 <table class="table table-hover">
                                      <tr>
-                                        <th><i class="fas fa-shipping-fast "></i> Shipping  Status</th>
+                                        <th><i class="fas fa-shipping-fast "></i>Shipping Status</th>
                                         <td>  
                                                     {{session('Shipping_Status')}}
     
@@ -47,13 +47,13 @@ aria-hidden="true">
                                                 </td>
                                       </tr>
                                       <tr>
-                                        <th><i class="fas fa-truck "></i> Delivery  Status:</th>
+                                        <th><i class="fas fa-truck "></i> Status da entrega:</th>
                                         <td>      {{session('Delivery_Status')}}
                                       
                                                 </td>
                                       </tr>
                                       <tr> 
-                                        <th><i class="fas fa-money-check "></i> Payment Status:</th>
+                                        <th><i class="fas fa-money-check "></i> Status do pagamento:</th>
                                         <td> 
                                         @if(session('p_status')=='pending')
                                          {{session('p_status')}}  <a href="/proceed_to_Payment/{{session('Order_id')}}" class="btaobtn btaobtn-success">Pay Now</a>
@@ -64,7 +64,7 @@ aria-hidden="true">
                                                 </td>
                                       </tr>
                                       <tr>
-                                        <th><i class="fas fa-rupee-sign "></i> Payment Mode:</th>
+                                        <th><i class="fas fa-rupee-sign "></i> Pagamento:</th>
                                         <td>{{session('paymentmode')}}</td>
                                       </tr>
                                 
@@ -92,7 +92,7 @@ aria-hidden="true">
                 <p class=" animated rotateIn"> 
                 <i class="fas fa-ban fa-3x"></i>
                 </p>
-                <h3>This Order Was Cancelled  By You On {{session('Order_Cancelled_On')}}</h3>
+                <h3>Este pedido foi cancelado dia {{session('Order_Cancelled_On')}}</h3>
             @endif
         </div>
 

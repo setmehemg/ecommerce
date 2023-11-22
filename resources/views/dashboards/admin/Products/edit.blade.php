@@ -1,5 +1,5 @@
  @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords')   @endsection
 @section('description')   @endsection
 @section('content')
@@ -8,9 +8,9 @@
 
         <p class="white-text" style="font-weight:bold;"> 
 
-            <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green     px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
+            <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green     px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Mostrar otodos produtos</a> 
         
-            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
+            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Adicionar novo produto</a> 
             <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
 
         </p>
@@ -27,7 +27,7 @@
 
 <div class="container py-5">
     <p align="left">
-        <i class="fas fa-edit"></i> Edit the Product
+        <i class="fas fa-edit"></i> Editar produtos
    </p>
     <div class="col-md-12">
         <div class="card">
@@ -43,7 +43,7 @@
                    
                   <li class="nav-item">
                       <a class="nav-link" id="Images-tab" data-toggle="tab" href="#Images" role="tab" aria-controls="Images"
-                        aria-selected="false">Images</a>
+                        aria-selected="false">Imagens</a>
                     </li>
                   <li class="nav-item">
                     <a class="nav-link" id="SEO-tab" data-toggle="tab" href="#SEO" role="tab" aria-controls="SEO"
@@ -55,7 +55,7 @@
                     </li>
                   <li class="nav-item">
                       <a class="nav-link" id="Additional_Information-tab" data-toggle="tab" href="#Additional_Information" role="tab" aria-controls="Additional_Information"
-                        aria-selected="false">Additional Information</a>
+                        aria-selected="false">Informação adicional</a>
                     </li>
                   <!--  <li class="nav-item">
                       <a class="nav-link"     data-toggle="modal" data-target="#fullHeightModalRight">Product Attributes</a>
@@ -67,7 +67,7 @@
                       <div class="row" style="padding: 30px;">
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label> Product Name</label>
+                                  <label> Nome</label>
                                   <input type="text" class="form-control" name="name" placeholder="Enter Name" value="{{$Products->name}}">
                               </div>
                           </div>
@@ -82,14 +82,14 @@
 
                           <div class="col-md-12">
                               <div class="form-group">
-                                  <label>Small Description</label>
+                                  <label>Descrição</label>
                                   <textarea rows="4" class="form-control"  name="small_description" placeholder="Small Description About Product">{{$Products->description}}</textarea>
                               </div>
                           </div>
 
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Priority</label>
+                                  <label>Prioridade</label>
                                   <input type="number" name="priority" min="0" class="form-control" value="{{$Products->priority}}">
                               </div>
                           </div>
@@ -97,20 +97,20 @@
 
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label> Price</label>
+                                  <label> Preço</label>
                                   <input type="text" name="price" min="0" class="form-control" value="{{$Products->price}}">
                               </div>
                           </div>
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Discount ( in terms of %)</label>
+                                  <label>Desconto ( em % )</label>
                                   <input type="number" name="Discount" min="0" class="form-control" value="{{$Products->discount}}">
                               </div>
                           </div>
   
                           <div class="col-md-6">
                             <div class="form-group">
-                                <label>Rating</label>
+                                <label>Avaliação</label>
                                 <select class="form-control" name="rating">
                                     <option value="{{$Products->rating}}" disabled>{{$Products->rating}}</option>
                                      <option value="1">1</option>
@@ -123,7 +123,7 @@
                         </div>
                           <div class="col-md-12">
                               <div class="form-group">
-                              <button type="submit" class="btaobtn btaobtn-success">Update</button>
+                              <button type="submit" class="btaobtn btaobtn-success">Atualizar</button>
                               </div>
                           </div>
 
@@ -140,14 +140,14 @@
                      <div class="row px-5 py-3">
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Product Image I</label>
+                                  <label>Imagem I</label>
                                   <input type="file" name="image1" class="form-control">
                                   <img src="{{asset('Uploads/Products/'.$Products->image1)}}" width="50px;"  alt="{{$Products->image1}}" />
                               </div>
                           </div>
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Product Image II</label>
+                                  <label>Imagem II</label>
                                   <input type="file" name="image2" class="form-control">
                                   
                                   <img src="{{asset('Uploads/Products/'.$Products->image2)}}" width="50px;"  alt="{{$Products->image2}}" />
@@ -155,7 +155,7 @@
                           </div>
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Product Image III</label>
+                                  <label>Imagem III</label>
                                   <input type="file" name="image3" class="form-control">
                                   
                                   <img src="{{asset('Uploads/Products/'.$Products->image3)}}" width="50px;"  alt="{{$Products->image3}}" />
@@ -163,7 +163,7 @@
                           </div>
                           <div class="col-md-6"   >
                               <div class="form-group">
-                                  <label>Product Image IV</label>
+                                  <label>Imagem IV</label>
                                   <input type="file" name="image4" class="form-control">
                                   
                                   <img src="{{asset('Uploads/Products/'.$Products->image4)}}" width="50px;"  alt="{{$Products->image4}}" />
@@ -171,7 +171,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                            <button type="submit" class="btaobtn btaobtn-success">Update</button>
+                            <button type="submit" class="btaobtn btaobtn-success">Atualizar</button>
                             </div>
                         </div>
                      </div>
@@ -202,7 +202,7 @@
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                        <button type="submit" class="btaobtn btaobtn-success">Update</button>
+                        <button type="submit" class="btaobtn btaobtn-success">Atualizar</button>
                         </div>
                     </div>
 
@@ -231,27 +231,27 @@
                                      
                                   </div>
                                   <p>
-                                      Note: If you check mark then, the product will be displayed to the public
+                                      PS: Se você marcar, será visível ao público.
                                   </p>
                               </div>
                             
                               <div class="col-md-12">
                                 <div class="form-group">
-                                <button type="submit" class="btaobtn btaobtn-success">Update</button>
+                                <button type="submit" class="btaobtn btaobtn-success">Atualizar</button>
                                 </div>
                             </div>
                       </div>
                   </div>
                     <div class="tab-pane fade" id="Additional_Information" role="tabpanel" aria-labelledby="Additional_Information-tab">
                         <div class="row" style="padding:30px;">
-                            <p>The following content will be displated in the product page</p>
+                            <p>O seguinte será visível junto ao item</p>
                              <div class="page-wrapper box-content">
 
                                 <textarea class="content" name="additional_info">{{$Products->additional_info}}</textarea>
                     
                             </div>
                             <div class="col-md-12">
-                             <button type="submit" class="btaobtn btaobtn-success">Update</button>
+                             <button type="submit" class="btaobtn btaobtn-success">Atualizar</button>
                              </div>
                     
                             <script>

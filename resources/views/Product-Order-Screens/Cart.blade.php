@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -32,7 +32,7 @@
     </style>
     
 <div  class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
-      <h5 class="my-2">  <a href="/" class="black-text">Home></a> <strong class="black-text"> <a href="" class="white-text" >Cart </a> </strong> </h5>
+      <h5 class="my-2">  <a href="/" class="black-text">Home</a> <strong class="black-text"> <a href="" class="white-text" >Carrinho </a> </strong> </h5>
                
 </div>
     

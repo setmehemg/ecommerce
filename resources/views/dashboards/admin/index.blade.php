@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -27,18 +27,18 @@
         </div>
         <div class="col-xl-3 col-md-6">
             <div class="card bg-primary text-white mb-4">
-                <div class="card-body"><i class="fas fa-users"></i> Registerd Users</div>
+                <div class="card-body"><i class="fas fa-users"></i> Usuários Registrados</div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="small text-white stretched-link" href="admin-all-users">View Details</a>
+                    <a class="small text-white stretched-link" href="admin-all-users">Ver Detalhes</a>
                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
         </div>
         <div class="col-xl-3 col-md-6">
             <div class="card bg-success  text-white mb-4">
-                <div class="card-body"> <i class="fas fa-file"></i> Orders</div>
+                <div class="card-body"> <i class="fas fa-file"></i> Pedidos</div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="small text-white stretched-link" href="{{url('admin-Orders')}}">View Details</a>
+                    <a class="small text-white stretched-link" href="{{url('admin-Orders')}}">Ver Detalhes</a>
                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
@@ -49,18 +49,18 @@
         </div>
         <div class="col-xl-3 col-md-6">
             <div class="card bg-danger  text-white mb-4">
-                <div class="card-body"><i class="fab fa-product-hunt"></i> Products </div>
+                <div class="card-body"><i class="fab fa-product-hunt"></i> Produtos </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="small text-white stretched-link" href="{{url('admin-products')}}">View Details</a>
+                    <a class="small text-white stretched-link" href="{{url('admin-products')}}">Ver Detalhes</a>
                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
         </div>
         <div class="col-xl-3 col-md-6">
             <div class="card bg-dark      text-white mb-4">
-                <div class="card-body"> <i class="fas fa-rupee-sign"></i> Transactions</div>
+                <div class="card-body"> <i class="fas fa-rupee-sign"></i> Trnasações</div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="small text-white stretched-link" href="{{url('admin-Transactions')}}">View Details</a>
+                    <a class="small text-white stretched-link" href="{{url('admin-Transactions')}}">Ver Detalhes</a>
                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
@@ -68,9 +68,9 @@
         
          <div class="col-xl-12 col-md-6">
             <div class="card bg-warning       mb-4">
-                <div class="card-body">   News Letter Subscription Data</div>
+                <div class="card-body">   Inscrições de notícias</div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="small  stretched-link" href="{{url('admin-news-letter')}}">View Details</a>
+                    <a class="small  stretched-link" href="{{url('admin-news-letter')}}">Ver Detalhes</a>
                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div><br><br>

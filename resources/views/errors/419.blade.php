@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe -419 page @endsection
+@section('title') ReKrie -419 page @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -28,7 +28,7 @@
  
               <img src="{{asset('public/Img/419.png')}}"  class="not_found_image"   >
  
-                <p>Please go back and refresh the page and then try again! if it doesnot work then please close the browser and do again...</p>
+                <p>Por favor retorne, atualize a página e tente novamente! Caso não funcione, reinicie o navegador.</p>
         
    
 </div>

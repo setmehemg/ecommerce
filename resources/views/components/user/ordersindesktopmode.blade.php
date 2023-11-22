@@ -2,7 +2,7 @@
 
 
 
-    <h3 class="py-2 px-5">My Orders</h3>
+    <h3 class="py-2 px-5">Meus Pedidos</h3>
    <div class="row px-5">
        
        <div class="col-md-12">
@@ -12,7 +12,7 @@
                            <thead>
                                <th>Order_Id</th>
                                <th>Order Details</th>
-                               <th>Delivery Address</th>
+                               <th>Endereço de entrega</th>
                                <th>Total Price (INR)</th>
    
                                 
@@ -34,15 +34,15 @@
                                <td>{{$item->Amount}}</td>
                                
                                <td> 
-                                   <a href="{{url('Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2 ">Check Status</a>
+                                   <a href="{{url('Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2 ">Verificar Status</a>
                                  
                                
                                   
                                 
                                  @if($item->Delivery_Status!='pending' || $item->Order_Cancel_Status==1)
-                                  <a href="{{url('Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancel Order</a>
+                                  <a href="{{url('Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancelar Pedido</a>
                                   @else
-                                      <a href="{{url('Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancel Order</a>
+                                      <a href="{{url('Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancelar Pedido</a>
                                
                                  @endif
    

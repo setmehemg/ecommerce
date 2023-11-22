@@ -12,7 +12,7 @@
                                 <div class="shopping-cart-table">
                                     <div class="table-responsive">
                                         <div class="col-md-12 text-right mb-3" style="margin-top:15px;">
-                                            <a href="clear-cart" class=" font-weight-bold ">Clear Cart</a>
+                                            <a href="clear-cart" class=" font-weight-bold ">Limpar Carrinho</a>
                                         </div>
                                         @foreach(session('cart') as $id => $details)
                                         <?php $total += $details['Final_Price'] * $details['item_quantity'] ?>

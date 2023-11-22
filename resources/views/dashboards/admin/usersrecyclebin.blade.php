@@ -1,12 +1,12 @@
 @extends('layouts.admin')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
 <div align="center" style="background:#1CD5E8;padding:20px;">
   <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
 <p class="white-text" style="font-weight:bold;">
-       <a href="{{url('admin-all-users')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-users"></i>  All Users</a> 
+       <a href="{{url('admin-all-users')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-users"></i>  Todos Usuários</a> 
         <a href="{{url('admin-bin-users')}}" class="badge badge-pill btn-danger disabled px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
     </p>
 @if (session('status'))
@@ -41,7 +41,7 @@
             <thead class="blue-grey lighten-4">
                 <tr>
                 <th>#Id</th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th>EmailId</th>
                 <th>Role</th>
               
@@ -59,8 +59,8 @@
                 <td>{{ $data->email }}</td>
                 <td>{{ $data->role }}</td>
                 <td>
-                    <a href="{{url('admin/restore-user/'.$data->id)}}" class="badge badge-pill btn-warning px-3 py-2">Restore</a>
-                        <a href="{{url('admin/confirm-delete-user/'.$data->id)}}" class="badge badge-pill btn-danger  px-3 py-2">Delete Permanently</a>
+                    <a href="{{url('admin/restore-user/'.$data->id)}}" class="badge badge-pill btn-warning px-3 py-2">Restaurar</a>
+                        <a href="{{url('admin/confirm-delete-user/'.$data->id)}}" class="badge badge-pill btn-danger  px-3 py-2">Deletar Permanentemente</a>
                     </td>
 
                 </tr>

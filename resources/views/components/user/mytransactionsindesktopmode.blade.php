@@ -1,5 +1,5 @@
 <div class="container">
-    <h3 class="py-2 px-2">My Transactions</h3>
+    <h3 class="py-2 px-2">Minhas Compras</h3>
 <div class="row p-2">
    <div class="col-md-12">
            <div class="card">
@@ -9,7 +9,7 @@
                         <th>TXID</th>
                            <th>Order_Id</th>
                          
-                           <th>Amount</th>
+                           <th>Quantidade</th>
  
                            <th>Status</th>
 

@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -23,7 +23,7 @@
 <div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
       
 
- <h5 class="my-3"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a> <strong class="black-text"> <a href="" class="black-text" >Dashboard </a> </strong> </h5>
+ <h5 class="my-3"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home</a> <strong class="black-text"> <a href="" class="black-text" >Dashboard </a> </strong> </h5>
             
     
 </div>  <br><br>
@@ -32,9 +32,9 @@
     <br><br>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white;font-size:30px;margin-left:20px;margin-top:80px;">x</a>
   <a href="{{url('dashboard')}}"> <i class="fas fa-tachometer-alt"></i>  Dashboard</a>
-  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Profile</a>
-  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Orders</a>
-  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Payments</a>
+  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Perfil</a>
+  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Pedidos</a>
+  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Pagamentos</a>
      <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="fas fa-sign-in-alt"></i> {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -91,7 +91,7 @@ function closeNav() {
                                             <li><strong>Mobile Number:</strong>{{Auth::user()->mnumber}}</li>
 
                                             <li style="float:left;"><strong>Alternative Mobile No: </strong>{{Auth::user()->alternativemno}}
-                                            <a href="{{url('profile')}}" class="btaobtn btaobtn-outline-dark p-2">Edit</a></li>
+                                            <a href="{{url('profile')}}" class="btaobtn btaobtn-outline-dark p-2">Editar</a></li>
                                             
                                         </ul>
 
@@ -108,7 +108,7 @@ function closeNav() {
                                             <span class="basket-item-count"  >
                                               <span class="badge badge-pill red"> {{ count((array) session('cart')) }}  </span>
                                               </span> 
-                                              <span style="font-size:20px;">Go to Cart<i class="fas fa-long-arrow-alt-right  mx-1"></i>
+                                              <span style="font-size:20px;">Ir para o Carrinho<i class="fas fa-long-arrow-alt-right  mx-1"></i>
                                               </span> 
                                               </a> 
                                     </div>

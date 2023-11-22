@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe -401 page @endsection
+@section('title') ReKrie -401 page @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -28,7 +28,7 @@
  
               <img src="{{asset('public/Img/401.png')}}"  class="not_found_image"   >
  
-                <p>You are not allowd to access this webpage</p>
+                <p>Você não possui permissão</p>
         
    
 </div>

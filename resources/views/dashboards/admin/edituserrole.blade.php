@@ -1,11 +1,11 @@
 @extends('layouts.admin')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
 <div align="center" style="background:#1CD5E8;padding:20px;">
   <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
-  <a href="{{url('admin-all-users')}}" class="btn btn-outline-dark" style="color:white">Back</a> 
+  <a href="{{url('admin-all-users')}}" class="btn btn-outline-dark" style="color:white">Voltar</a> 
 @if (session('status'))
   <div class="alert alert-danger" role="alert">
       {{ session('status') }}
@@ -20,7 +20,7 @@
 
 <div class="container py-2">
    <p align="left">
-    <i class="fas fa-edit"></i> Edit User Role
+    <i class="fas fa-edit"></i> Editar cargo do usuário
    </p>
      
     <!--Grid column-->
@@ -50,7 +50,7 @@
                             </select>
                             </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
                          </div>
 
             </form>

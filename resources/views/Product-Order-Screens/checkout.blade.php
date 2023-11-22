@@ -1,11 +1,11 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
  
 <div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
-  <h5 class="my-2">  <a href="/" class="black-text">Home</a> <strong class="black-text"> > <a href="{{url('cart')}}" class="black-text" >Cart </a> > <a href="" class="white-text" >Check out </a> </strong> </h5>
+  <h5 class="my-2">  <a href="/" class="black-text">Home</a> <strong class="black-text"> > <a href="{{url('cart')}}" class="black-text" >Carrinho </a> > <a href="" class="white-text" >Check out </a> </strong> </h5>
            
 </div>
 <h2 align="center" id="writetitle" class="black-text py-3" style="font-weight:bold;">Order Summary</h2>
@@ -78,14 +78,14 @@
                                 <li>
                                     <p align="left" style="float:left;">
                                         <strong>
-                                            Product
+                                            Produto
                                         </strong>
                                     </p>
                                    
                                     
                                     <p align="right" >
                                         <strong>
-                                            Price
+                                            Preço
                                         </strong>
                                     </p>
                                 </li>
@@ -131,7 +131,7 @@
                                         <p align="right" >
                                             <i class="fas fa-rupee-sign " ></i>  {{$total}}  
                                         </p>
-                                        <a href="" data-toggle="modal" data-target="#modalDiscount" >Have a PromoCode</a>
+                                        <a href="" data-toggle="modal" data-target="#modalDiscount" >Código de Desconto</a>
                                     
                                         @endif
                                       
@@ -149,7 +149,7 @@
                                     </li>    
                                     @endif
 
-                                    <button onclick="Continue()" class="btaobtn btaobtn-outline-dark px-2 py-2">Continue</button>
+                                    <button onclick="Continue()" class="btaobtn btaobtn-outline-dark px-2 py-2">Continuar</button>
                     
                         </ul>
                 
@@ -174,7 +174,7 @@
           <div class="modal-content">
             <!--Header-->
             <div class="modal-header">
-              <p class="heading">Have a Promo Code
+              <p class="heading">Código de Desconto
                 <strong></strong>
               </p>
   
@@ -204,10 +204,10 @@
   
             <!--Footer-->
             <div class="modal-footer flex-center">
-              <button type="submit" class="btn btn-danger">Apply 
+              <button type="submit" class="btn btn-danger">Aplicar 
                 <i class="far fa-gem ml-1 white-text"></i>
               </button>
-              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
+              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Não, obrigado</a>
             </div>
   </form>
           </div>
@@ -248,7 +248,7 @@
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
-        <p class="heading lead">Error</p>
+        <p class="heading lead">Erro</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="white-text">&times;</span>
@@ -259,7 +259,7 @@
       <div class="modal-body">
         <div class="text-center">
           <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
-          <h3 style="color: red"> Some Errors are Found! </h3>
+          <h3 style="color: red"> Alguns erros ocorreram! </h3>
          <ul align="left"  >
            @foreach ($errors->all() as $error)
                
@@ -281,7 +281,7 @@
       <!--Footer-->
       <div class="modal-footer justify-content-center">
           <p   class="close" data-dismiss="modal" aria-label="Close"  >
-        <button  class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></button>
+        <button  class="btaobtn btaobtn-danger">Tentar novamente<i class="far fa-gem ml-1 text-white"></i></button>
         </p>
         
       </div>

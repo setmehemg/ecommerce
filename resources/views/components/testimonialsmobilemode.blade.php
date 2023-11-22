@@ -7,7 +7,7 @@
                         <div style="border-bottom: 2px solid black;width:100px;margin-left:35%;"></div><br>
                            <!--  <p class="black-text" style=" font-family: 'Balsamiq Sans', cursive;"> Here’s what some of our customers say about our work.</p>-->
                         <!-- List of Clients-->
-                        <div align="center" id="mobilemodetesimonial" class="carousel slide carousel-multi-item v-2 wow animated fadeInUp fast" data-ride="carousel"><div class="carousel-inner" role="listbox">
+                        <div align="center" id="mobilemodetesimonial" class="carousel slide carousel-multi-item v-2 wow" data-ride="carousel"><div class="carousel-inner" role="listbox">
      
                             <div class="carousel-item active">
                                  <div class="row">
@@ -16,13 +16,12 @@
                                                 <div class="card-body">
                                                        
                                                             <p align="left" style="float:left;">
-                                                                <img src="{{asset('assets/img/testimonials/rahul.jpg')}}" class="z-depth-1" style="width:100px;">
+                                                                <img src="{{asset('assets/img/testimonials/henrique.jpeg')}}" class="z-depth-1" style="width:100px;">
                                                             </p>
-                                                            <p ><span style="font-weight:bold;">Vijayanagaram Rahul</span> <br>Freelauncer</p>
+                                                            <p ><span style="font-weight:bold;">Henrique Gewehr</span> <br>Autônomo</p>
                                                             <br><br>
                                                             <p align="left" class="card-text" style="font-family: 'Balsamiq Sans', cursive;display:block;">
-                                                                <i>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata 
-                                                                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
+                                                                <i>"Ótimos produtos, todos de excelente qualidade! Dos melhores materais para se utilizar. Duram muito e trazem um conforto na sua residência"
                                                                 </i>
                                                             </p>
                                                             
@@ -42,13 +41,12 @@
                                                 <div class="card-body">
                                                        
                                                             <p align="left" style="float:left;">
-                                                                <img src="{{asset('assets/img/testimonials/sandeep.jpg')}}" class="z-depth-1" style="width:100px;">
+                                                                <img src="{{asset('assets/img/testimonials/henrique.jpeg')}}" class="z-depth-1" style="width:100px;">
                                                             </p>
-                                                            <p ><span style="font-weight:bold;">sandeep</span> <br>Freelauncer</p>
+                                                            <p ><span style="font-weight:bold;">Henrique Gewehr</span> <br>Autônomo</p>
                                                             <br><br>
                                                             <p align="left" class="card-text" style="font-family: 'Balsamiq Sans', cursive;display:block;">
-                                                                <i>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata 
-                                                                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
+                                                                <i>"Ótimos produtos, todos de excelente qualidade! Dos melhores materais para se utilizar. Duram muito e trazem um conforto na sua residência"
                                                                 </i>
                                                             </p>
                                                             

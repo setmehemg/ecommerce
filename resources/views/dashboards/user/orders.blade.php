@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -17,9 +17,9 @@
     <br><br>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white;font-size:30px;margin-left:20px;margin-top:80px;">x</a>
   <a href="{{url('dashboard')}}"> <i class="fas fa-tachometer-alt"></i>  Dashboard</a>
-  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Profile</a>
-  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Orders</a>
-  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Payments</a>
+  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Perfil</a>
+  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Pedidos</a>
+  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Pagamentos</a>
      <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="fas fa-sign-in-alt"></i> {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -70,7 +70,7 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead">Success</p>
+         <p class="heading lead">Sucesso</p>
 
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true" class="white-text">&times;</span>
@@ -87,8 +87,8 @@ function closeNav() {
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         <a href="{{url('/')}}" class="btn btn-success">SHOP MORE<i class="far fa-gem ml-1 text-white"></i></a>
-         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
+         <a href="{{url('/')}}" class="btn btn-success">Comprar Mais<i class="far fa-gem ml-1 text-white"></i></a>
+         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Não, Obrigado</a>
        </div>
      </div>
      <!--/.Content-->

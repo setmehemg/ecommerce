@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -39,7 +39,7 @@
 <div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px; ">
       
 
- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Profile </a> </strong> </p>
+ <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home</a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Profile </a> </strong> </p>
             
     
 </div>
@@ -47,9 +47,9 @@
     <br><br>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white;font-size:30px;margin-left:20px;margin-top:80px;">x</a>
   <a href="{{url('dashboard')}}"> <i class="fas fa-tachometer-alt"></i>  Dashboard</a>
-  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Profile</a>
-  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Orders</a>
-  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Payments</a>
+  <a href="{{url('profile')}}" > <i class="fas fa-user"></i>   Perfil</a>
+  <a href="{{url('Orders')}}"> <i class="fas fa-table"></i>  Pedidos</a>
+  <a href="{{url('Payments')}}"> <i class="fas fa-receipt"></i>  Pagamentos</a>
      <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="fas fa-sign-in-alt"></i> {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -69,7 +69,7 @@ function closeNav() {
     
 <div class="container px-5">
        
-    <h3 class="py-2  ">My Profile</h3>
+    <h3 class="py-2  ">Meu Perfil</h3>
                <div class="row ">
    
                <div class="col-md-12">
@@ -88,7 +88,7 @@ function closeNav() {
                    
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                           <label> Name</label>
+                                                           <label> Nome</label>
                                                            <input type="text" value="{{Auth::user()->name}}" class="form-control" name="name"> 
                                                            </div>
                                                        </div>
@@ -110,8 +110,8 @@ function closeNav() {
                                                        <div class="col-md-12 py-2">
                                                            
                                                            <div class="form-group">
-                                                                <button type="submit" class="btn btn-success btn-lg"> Update    </button>    
-                                                                   <a  data-toggle="modal" data-target="#openpasswordmodel"    class="btaobtn btaobtn-outline-dark btaobtn-lg px-2 py-2"> Change Password    </a>
+                                                                <button type="submit" class="btn btn-success btn-lg"> Atualizar    </button>    
+                                                                   <a  data-toggle="modal" data-target="#openpasswordmodel"    class="btaobtn btaobtn-outline-dark btaobtn-lg px-2 py-2"> Mudar Senha    </a>
                                                            </div>
                                                        </div>
                                                    </div>
@@ -119,7 +119,7 @@ function closeNav() {
                                   </div>
                                   
           
-    <h3 class="py-3">Delivery Address</h3>
+    <h3 class="py-3">Endereço</h3>
                                    <div class="card">
                                        
                                        <div class="card-body">
@@ -129,14 +129,14 @@ function closeNav() {
                                                        </div>
                                                        <div class="col-md-6">
                                                            <div class="form-group">
-                                                            <label> Address1 ( Door No: )</label>
+                                                            <label> Endereço 1: ( Número: )</label>
                                                            <input type="text" value="{{Auth::user()->address1}}" name="address1" class="form-control">
                                                            </div>
                                                        </div>
                            
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label> Address2 ( LandMark/Nearby )</label>
+                                                            <label> Endereço 2: ( Referências )</label>
                                                            <input type="text" value="{{Auth::user()->address2}}" name="address2"   class="form-control">
                                                            </div>
                                                        </div>
@@ -144,25 +144,25 @@ function closeNav() {
                                                    <div class="row">
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label> City</label>
+                                                            <label> Cidade</label>
                                                            <input type="text" value="{{Auth::user()->city}}"  name="city" class="form-control">
                                                            </div>
                                                        </div>
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label>State</label>
+                                                            <label>Estado</label>
                                                            <input type="text" value="{{Auth::user()->state}}"  name="state" class="form-control">
                                                            </div>
                                                        </div>
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label>Pincode</label>
+                                                            <label>Zipcode</label>
                                                            <input type="text" value="{{Auth::user()->pincode}}"  name="pincode" class="form-control">
                                                            </div>
                                                        </div>
                                                        <div class="col-md-4">
                                                         <div class="form-group">
-                                                         <label>Country</label>
+                                                         <label>País</label>
                                                         <input type="text" value="{{Auth::user()->country}}" name="country" class="form-control">
                                                         </div>
                                                     </div>
@@ -183,7 +183,7 @@ function closeNav() {
                            
                                                        <div class="col-md-12">
                                                            <div class="form-group">
-                                                                   <button type="submit" class="btn btn-success btn-lg"> Update    </button>
+                                                                   <button type="submit" class="btn btn-success btn-lg"> Atualizar    </button>
                                                            </div>
                                                        </div>
                                                        </div>
@@ -221,7 +221,7 @@ function closeNav() {
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
-        <p class="heading lead">Error</p>
+        <p class="heading lead">Erro</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="white-text">&times;</span>
@@ -232,7 +232,7 @@ function closeNav() {
       <div class="modal-body">
         <div class="text-center">
           <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
-          <h3 style="color: red"> Profile Not Updated </h3>
+          <h3 style="color: red"> Perfil Não Atualizado </h3>
          <ul align="left"  >
                 @if($errors->any())
                    @foreach ($errors->all() as $error)
@@ -248,7 +248,7 @@ function closeNav() {
       <!--Footer-->
       <div class="modal-footer justify-content-center">
           <p   class="close" data-dismiss="modal" aria-label="Close"  >
-        <button  class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></button>
+        <button  class="btaobtn btaobtn-danger">Tente Novamente<i class="far fa-gem ml-1 text-white"></i></button>
         </p>
         
       </div>
@@ -266,7 +266,7 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead"> Success</p>
+         <p class="heading lead"> Sucesso</p>
 
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true" class="white-text">&times;</span>
@@ -284,7 +284,7 @@ function closeNav() {
        <!--Footer-->
        <div class="modal-footer justify-content-center">
          
-         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
+         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Fechar</a>
        </div>
      </div>
      <!--/.Content-->
@@ -303,7 +303,7 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead">Update Your Password</p>
+         <p class="heading lead">Atualize sua senha</p>
 
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true" class="white-text">&times;</span>
@@ -322,7 +322,7 @@ function closeNav() {
        <!--Footer-->
        <div class="modal-footer justify-content-center">
          
-         <button type="submit" class="btn btn-outline-primary waves-effect" >Update</button>
+         <button type="submit" class="btn btn-outline-primary waves-effect" >Atualizar</button>
        </div>
      </div>
      <!--/.Content-->

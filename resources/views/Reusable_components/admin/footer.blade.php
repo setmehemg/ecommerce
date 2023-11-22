@@ -9,8 +9,8 @@
   <div  class="footer-copyright text-center py-3" style=background:black>
         <div class="row" style="font-size:15px;">
             <div class="col-md-3">
-                    © 2020 Copyright:
-                <a href="https://rahulvijayam.com/"> Rekrie</a>
+                    © 2023 Copyright:
+                <a href="https://rahulvijayam.com/"> ReKrie</a>
             </div>
             
             <div  id="developedbybtaoteam" class="col-md-9" >

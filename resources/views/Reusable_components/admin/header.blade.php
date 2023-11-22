@@ -11,22 +11,22 @@
           <nav class="nav-menu d-none d-lg-block contentfont" >
             <ul style="margin-top:5px">
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#Startups">Products</a></li>
+              <li><a href="/#about">Sobre</a></li>
+              <li><a href="/#Startups">Produtos</a></li>
               
-              <li><a href="/#Startups">Team</a></li>
+              <li><a href="/#Startups">Time</a></li>
               
-              <li><a href="/#Startups"><i class="fas fa-headset"  ></i> Help</a></li>   
+              <li><a href="/#Startups"><i class="fas fa-headset"  ></i>Ajuda</a></li>   
              
                 @if (Route::has('login'))
 
                 @auth
                   <li class="drop-down"><a href="#">Dashboard <i class="fas fa-angle-down"></i></a>
                        <ul> 
-                            <li><a href="{{url('admin-all-users')}}" >Registered Users</a></li>
-                            <li><a href="{{url('admin-Orders')}}" >Orders</a></li>
-                            <li><a href="{{url('admin-Transactions')}}" >Transaction_Details</a></li>
-                            <li><a href="{{url('admin-products')}}" >Products</a></li>
+                            <li><a href="{{url('admin-all-users')}}" >Usuários Registrados</a></li>
+                            <li><a href="{{url('admin-Orders')}}" >Pedidos</a></li>
+                            <li><a href="{{url('admin-Transactions')}}" >Detalhes de Transações</a></li>
+                            <li><a href="{{url('admin-products')}}" >Produtos</a></li>
                             <a   href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -39,7 +39,7 @@
                 <li> <a href="{{ route('login') }}">Login</a> </li>
 
                     @if (Route::has('register'))
-                    <li> <a href="{{ route('register') }}">Register</a> </li>
+                    <li> <a href="{{ route('register') }}">Registrar</a> </li>
                     @endif
                 @endauth
 

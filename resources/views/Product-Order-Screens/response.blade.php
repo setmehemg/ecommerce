@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -19,9 +19,9 @@
   <div class="text-center">
       <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
       <h3 style="color: red"> <?php echo session('payment_failure')?></h3>
-      <p> Please Try Again</p>
-      <a href="/proceed_to_Payment/{{session('O_id')}}" class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></a>
-      <a href="/" class="btaobtn btaobtn-outline-danger">Back To Home Page</a>
+      <p> Por favor, tente novamente </p>
+      <a href="/proceed_to_Payment/{{session('O_id')}}" class="btaobtn btaobtn-danger">Tente novamente<i class="far fa-gem ml-1 text-white"></i></a>
+      <a href="/" class="btaobtn btaobtn-outline-danger">Retornar ao Home Page</a>
 
 
     </div>
@@ -37,7 +37,7 @@
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
-        <p class="heading lead">Payment Failed</p>
+        <p class="heading lead">Falha no pagamento</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="white-text">&times;</span>
@@ -49,15 +49,15 @@
         <div class="text-center">
           <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
           <h3 style="color: red"> <?php echo session('payment_failure')?></h3>
-          <p> Please Try Again</p>
+          <p> Por favor, tente novamente</p>
         
         </div>
       </div>
 
       <!--Footer-->
       <div class="modal-footer justify-content-center">
-        <a href="/proceed_to_Payment/{{session('O_id')}}" class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></a>
-        <a href="/" class="btaobtn btaobtn-outline-danger"  >Back to Home Page</a>
+        <a href="/proceed_to_Payment/{{session('O_id')}}" class="btaobtn btaobtn-danger">Tente novamente<i class="far fa-gem ml-1 text-white"></i></a>
+        <a href="/" class="btaobtn btaobtn-outline-danger"  >Retornar ao Home Page</a>
       </div>
     </div>
     <!--/.Content-->

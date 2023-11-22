@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -32,7 +32,7 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                        
-                        <th>Name</th>
+                        <th>Nome</th>
                         <th>Email Id</th>
                         
                     </thead>

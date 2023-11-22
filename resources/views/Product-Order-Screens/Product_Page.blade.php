@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ReKrie @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -120,7 +120,7 @@
 
 
                                       <button class="btaobtn btaobtn-primary px-2 py-2 book-now-btn" >Book Now</button>
-                                      <button   class="btaobtn btaobtn-light px-2 py-2 add-to-cart-btn">Add to Cart </button>
+                                      <button   class="btaobtn btaobtn-light px-2 py-2 add-to-cart-btn">Adicionar ao Carrinho </button>
                                     <div id="showloading"> </div>
                                       <div align="left" class="alert alert-danger" id="msg_diverr2" style="display: none;">
                                           <span id="triggererrors"></span>
