@@ -76,7 +76,7 @@ $Products=App\Models\Products::where('status','=','1')->get();
           <div class="py-2" style="background:white;">
             <span class="black-text my-3" style="font-weight:bold; font-family: 'Balsamiq Sans', cursive;">{{$item->name}}</span>
             <br>
-            Price : ₹ {{$item->price}}<br>
+            Price : R$ {{$item->price}}<br>
               @if($item->rating==1)
                             <span class="fa fa-star checked"></span>
                               <span class="fa fa-star"></span>

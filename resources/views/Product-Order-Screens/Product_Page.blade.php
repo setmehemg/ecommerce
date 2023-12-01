@@ -111,7 +111,7 @@
                               
 
                                 <input type="hidden"   name="product_id"   min=0 value="{{$Product->id}}" required class="form-control product_id">
-                                   <p> Price : <strong style="font-size:20px;font-family: 'Balsamiq Sans', cursive;">₹ {{$Product->price}}</strong></p>
+                                   <p> Price : <strong style="font-size:20px;font-family: 'Balsamiq Sans', cursive;">R$ {{$Product->price}}</strong></p>
                                       <?php echo $Product->additional_info;?>
                                 <div class="col-md-6" style="margin-left:-20px;">  
                                   <input type="number" class="form-control quantity" name="quantity" placeholder="Quantity">
